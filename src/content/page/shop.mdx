@@ -8,88 +8,22 @@ hero_buttons:
     href: "#more"
     icon: /src/icons/down-line.svg
 blocks:
-  - type: shop_categories
-    component: ShopCategories
-    container: md
-    template: grid
-    title: Categories
-    animate: false
-    categories:
-      - "Merch"
-      - Donations
-      - Licenses
-  - type: shop_products
-    component: ShopProducts
-    count: 4
-    container: md
-    template: list
-    title: Fresh Products
-    animate: false
-    categories:
-      - "Merch"
-    content: >
-      Our define collection of fictional merch from the Draco Void Convergence,
-      shipping time under 200 lightyears. check out our amazing collection.
-  - type: text_image
-    component: TextImage
-    container: none
-    template: banner
-    title: My Image
-    image_size: "50"
-    reverse: false
-    animate: false
-    thumbnail: /src/assets/cosmic_coffee_2.jpeg
-    content: >
-      ## **Caffeinate a developer** Brewing Inspiration, One Cup at a Time.
+  - type: rich_text
+    component: RichText
+    container: xl
+    content: >+
+      
+      <div id="my-store-96987418"></div>
 
+      <div>
 
-      Sip on the satisfaction of knowing that your donation is a key ingredient in fueling creativity. Your support empowers artists, writers, musicians, and content creators to keep innovating, producing, and delighting the world with their work. With each cup of virtual coffee, you’re helping transform visions into reality.
-    buttons:
-      - icon_only: false
-        label: Buy me a coffee
-        href: "#"
-        color: surface-success
-    block_class: my-0
-  - type: shop_products
-    component: ShopProducts
+      <script data-cfasync="false" type="text/javascript" src="https://api-e.lightspeed.app/script.js?96987418&data_platform=code&data_date=2024-01-07" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-96987418");</script>
+
+      </div>
+
     count: 10
-    container: md
-    template: flex
-    title: ""
-    animate: false
-    categories:
-      - Donations
-    block_class: mb-8
-  - type: text_image
-    component: TextImage
-    container: md
     template: column
-    title: Magic bean bag
-    image_size: "66"
-    reverse: true
-    animate: false
-    content: >
-      ## Merch Store
-
-
-      Explore our Interstellar Webshop featuring products that are truly out of this world. Dive into a cosmic collection as vast as the universe itself.
-    thumbnail: /src/assets/nebulix-ben-bag.png
-    buttons:
-      - icon_only: false
-        label: Shop App productrs
-        href: "#"
-        color: bg-[#fc0] text-black
-        icon: /src/icons/shopping-cart.svg
-    surface: surface-primary
-    block_class: ""
-  - type: shop_products
-    component: ShopProducts
-    count: 9
-    container: md
-    template: flex
-    animate: false
-    categories:
-      - "Merch"
+    animate: true
 style:
   template: full
   hero_template: image
