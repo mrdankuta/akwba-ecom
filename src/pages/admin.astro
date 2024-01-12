@@ -1,6 +1,6 @@
 ---
 /* STATIC CMS ADMIN PAGE */
-import { menu, page, settings, post, project, product } from "@cms/index.mjs";
+import { menu, page, settings, post, project, recipes, product } from "@cms/index.mjs";
 import logo from "@icons/logo.svg";
 import newsIcon from "@icons/news.svg";
 import pageIcon from "@icons/page.svg";
@@ -36,7 +36,7 @@ const config = {
     max_file_size: 2012000,
     folder_support: true,
   },
-  collections: [page, post, project, product, menu, settings],
+  collections: [page, post, project, recipes, product, menu, settings],
 };
 ---
 
@@ -45,7 +45,7 @@ const config = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nebulix Admin | by unfolding.io</title>
+    <title>Akwaaba Spice Admin | by rarefyconsulting.com</title>
     <link
       rel="stylesheet"
       href={`https://unpkg.com/@staticcms/app@^${staticCmsVersion}/dist/main.css`}
