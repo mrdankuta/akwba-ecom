@@ -2,9 +2,9 @@
 
 @layer base {
   :root {
-    --color-primary: 75 38 143; /* 135 94 212 */
-    --color-secondary: 107 154 199;
-    --color-accent: 119 112 150;
+    --color-primary: 195 13 15; /* 135 94 212 */
+    --color-secondary: 220 188 17;
+    --color-accent: 66 156 34;
     --color-warning: 202 121 45;
     --color-danger: 180 25 14;
     --color-success: 77 137 101;
