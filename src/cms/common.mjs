@@ -184,6 +184,12 @@ export const buttons = {
       widget: "string",
     },
     {
+      label: t("attributes"),
+      name: "attributes",
+      widget: "string",
+      required: false,
+    },
+    {
       name: "color",
       label: t("surface"),
       multiple: false,
