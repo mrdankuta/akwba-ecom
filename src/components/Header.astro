@@ -26,6 +26,9 @@ const isActive = (href) => {
     {
       menu && (
         <ul class="nav-underline nav-links relative hidden flex-nowrap pl-4 uppercase tracking-wide before:absolute before:inset-y-4 before:left-0 before:border-l-2 before:border-primary before:border-opacity-50 md:flex ">
+          <li class={`${isActive("/shop") ? "active font-semibold" : ""}`}>
+            <a href="/shop" class={`block py-3`} data-astro-reload>Shop Now</a>
+          </li>
           {menu.map((link) => (
             <li class={`${isActive(link.href) ? "active font-semibold" : ""}`}>
               <a href={link.href} class={`block py-3`}>
@@ -33,9 +36,6 @@ const isActive = (href) => {
               </a>
             </li>
             ))}
-            <li class={`${isActive("/shop") ? "active font-semibold" : ""}`}>
-              <a href="/shop" class={`block py-3`} data-astro-reload>Shop Now</a>
-            </li>
         </ul>
       )
     }
@@ -85,6 +85,16 @@ const isActive = (href) => {
                 class="mobile-links nav-links mt-3 w-full text-center"
                 slot="links"
               >
+                <li
+                    
+                    class={`title-md inner w-full border-2 border-transparent transition-all duration-1000 hover:border-current  ${
+                      isActive("/shop")
+                        ? "active font-semibold text-primary"
+                        : ""
+                    }`}
+                >
+                  <a href="/shop" class={`block py-3`} data-astro-reload>Shop Now</a>
+                </li>
                 {menu.map((link, index) => (
                   <li
                     style={`--animation-delay: ${(index + 1) * 100}ms`}
