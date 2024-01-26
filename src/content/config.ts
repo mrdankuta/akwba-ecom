@@ -43,6 +43,7 @@ const blocks = z
 						href: z.string(),
 						className: z.string().optional(),
 						label: z.string(),
+						rest: z.string().optional(),
 						color: z.string().optional(),
 						icon: z.string().transform((val) => getIconName(val)).optional(),
 						icon_only: z.boolean().optional()
@@ -73,6 +74,7 @@ const blocks = z
 						href: z.string(),
 						className: z.string().optional(),
 						label: z.string(),
+						rest: z.string().optional(),
 						color: z.string().optional(),
 						icon: z.string().transform((val) => getIconName(val)).optional(),
 						icon_only: z.boolean().optional()
@@ -129,6 +131,7 @@ const blog = defineCollection({
 					href: z.string(),
 					className: z.string().optional(),
 					label: z.string(),
+					rest: z.string().optional(),
 					color: z.string().optional(),
 					icon: z.string().transform((val) => getIconName(val)).optional(),
 					icon_only: z.boolean().optional()
@@ -190,6 +193,7 @@ const project = defineCollection({
 					href: z.string(),
 					className: z.string().optional(),
 					label: z.string(),
+					rest: z.string().optional(),
 					color: z.string().optional(),
 					icon: z.string().transform((val) => getIconName(val)).optional(),
 					icon_only: z.boolean().optional()
@@ -250,6 +254,7 @@ const recipes = defineCollection({
 					href: z.string(),
 					className: z.string().optional(),
 					label: z.string(),
+					rest: z.string().optional(),
 					color: z.string().optional(),
 					icon: z.string().transform((val) => getIconName(val)).optional(),
 					icon_only: z.boolean().optional()
@@ -345,6 +350,7 @@ const product = defineCollection({
 					href: z.string(),
 					className: z.string().optional(),
 					label: z.string(),
+					rest: z.string().optional(),
 					color: z.string().optional(),
 					icon: z.string().transform((val) => getIconName(val)).optional(),
 					icon_only: z.boolean().optional()
@@ -472,6 +478,7 @@ const menu = defineCollection({
 					href: z.string(),
 					className: z.string().optional(),
 					label: z.string(),
+					rest: z.string().optional(),
 					color: z.string().optional(),
 					icon: z.string().transform((val) => getIconName(val)).optional(),
 					icon_only: z.boolean().optional()
@@ -520,6 +527,7 @@ const page = defineCollection({
 					href: z.string(),
 					className: z.string().optional(),
 					label: z.string(),
+					rest: z.string().optional(),
 					color: z.string().optional(),
 					icon: z.string().transform((val) => getIconName(val)).optional(),
 					icon_only: z.boolean().optional()
@@ -557,6 +565,7 @@ const config = defineCollection({
 					href: z.string(),
 					className: z.string().optional(),
 					label: z.string(),
+					rest: z.string().optional(),
 					color: z.string().optional(),
 					icon: z.string().transform((val) => getIconName(val)).optional(),
 					icon_only: z.boolean().optional()
@@ -602,6 +611,7 @@ const config = defineCollection({
 							    href: z.string(),
 								className: z.string().optional(),
 								label: z.string(),
+								rest: z.string().optional(),
 								color: z.string().optional(),
 								icon: z.string().transform((val) => getIconName(val)).optional(),
 								icon_only: z.boolean().optional()
@@ -628,6 +638,7 @@ const config = defineCollection({
 							    href: z.string(),
 								className: z.string().optional(),
 								label: z.string(),
+								rest: z.string().optional(),
 								color: z.string().optional(),
 								icon: z.string().transform((val) => getIconName(val)).optional(),
 								icon_only: z.boolean().optional()
@@ -654,6 +665,7 @@ const config = defineCollection({
 							    href: z.string(),
 								className: z.string().optional(),
 								label: z.string(),
+								rest: z.string().optional(),
 								color: z.string().optional(),
 								icon: z.string().transform((val) => getIconName(val)).optional(),
 								icon_only: z.boolean().optional()
@@ -681,6 +693,7 @@ const config = defineCollection({
 							    href: z.string(),
 								className: z.string().optional(),
 								label: z.string(),
+								rest: z.string().optional(),
 								color: z.string().optional(),
 								icon: z.string().transform((val) => getIconName(val)).optional(),
 								icon_only: z.boolean().optional()
